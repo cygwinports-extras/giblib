@@ -1,0 +1,83 @@
+giblib
+-------------------------------------------
+giblib is a utility library incorporating doubly linked lists, 
+some string functions, and a wrapper for imlib2.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libimlib2-1.4.1-1
+
+Build requirements:
+  autoconf2.5-2.61-1
+  automake1.4-1.4p6-4
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical homepage:
+  http://linuxbrit.co.uk/giblib/
+
+Canonical download:
+  http://linuxbrit.co.uk/downloads/
+
+-------------------------------------------
+
+Build instructions:
+  unpack giblib-1.2.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./giblib-1.2.4-X.cygport all
+
+This will create:
+  /usr/src/giblib-1.2.4-X-src.tar.bz2
+  /usr/src/giblib-1.2.4-X.tar.bz2
+  /usr/src/libgiblib-devel-1.2.4-X.tar.bz2
+  /usr/src/libgiblib1-1.2.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libgiblib1)
+  /usr/bin/cyggiblib-1.dll
+  /usr/share/doc/giblib-1.2.4/AUTHORS
+  /usr/share/doc/giblib-1.2.4/COPYING
+  /usr/share/doc/giblib-1.2.4/ChangeLog
+  /usr/share/doc/giblib-1.2.4/README
+
+(libgiblib-devel)
+  /usr/bin/giblib-config
+  /usr/include/giblib/giblib.h
+  /usr/include/giblib/giblib_config.h
+  /usr/include/giblib/gib_btree.h
+  /usr/include/giblib/gib_debug.h
+  /usr/include/giblib/gib_hash.h
+  /usr/include/giblib/gib_imlib.h
+  /usr/include/giblib/gib_list.h
+  /usr/include/giblib/gib_queue.h
+  /usr/include/giblib/gib_stack.h
+  /usr/include/giblib/gib_style.h
+  /usr/include/giblib/gib_utils.h
+  /usr/lib/libgiblib.a
+  /usr/lib/libgiblib.dll.a
+  /usr/lib/libgiblib.la
+  /usr/lib/pkgconfig/giblib.pc
+
+------------------
+
+Port Notes:
+
+----- version 1.2.4-2 -----
+Rebuilt.
+
+----- version 1.2.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

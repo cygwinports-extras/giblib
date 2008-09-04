@@ -1,0 +1,15 @@
+--- origsrc/giblib-1.2.4/Makefile.am	2004-09-04 09:40:40.000000000 -0500
++++ src/giblib-1.2.4/Makefile.am	2008-09-03 22:50:08.632841600 -0500
+@@ -2,10 +2,9 @@
+ 
+ SUBDIRS = giblib
+ 
+-docs_DATA = README AUTHORS ChangeLog TODO
+-docsdir = $(prefix)/doc/giblib
++noinst_DATA = README AUTHORS ChangeLog TODO
+ 
+-EXTRA_DIST= $(docs_DATA) giblib.pc.in
++EXTRA_DIST= $(noinst_DATA) giblib.pc.in
+ 
+ pkgconfigdir = $(libdir)/pkgconfig
+ pkgconfig_DATA = giblib.pc

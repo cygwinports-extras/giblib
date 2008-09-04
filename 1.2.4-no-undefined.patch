@@ -1,0 +1,9 @@
+--- origsrc/giblib-1.2.4/giblib/Makefile.am	2004-09-04 09:42:27.000000000 -0500
++++ src/giblib-1.2.4/giblib/Makefile.am	2008-09-03 22:49:20.111938100 -0500
+@@ -26,5 +26,5 @@
+ 
+ libgiblib_la_LIBADD = @IMLIB_LIBS@
+ libgiblib_la_DEPENDENCIES = giblib_config.h
+-libgiblib_la_LDFLAGS = -version-info 1:6:0
++libgiblib_la_LDFLAGS = -version-info 1:6:0 -no-undefined
+ 

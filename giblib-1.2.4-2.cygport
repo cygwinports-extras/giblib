@@ -1,0 +1,14 @@
+DESCRIPTION="Imlib2-based image utility library"
+HOMEPAGE="http://linuxbrit.co.uk/giblib/"
+SRC_URI="http://linuxbrit.co.uk/downloads/${P}.tar.gz"
+PATCH_URI="1.2.4-docs.patch
+           1.2.4-no-undefined.patch"
+
+abi=1
+PKG_NAMES="${PN} lib${PN}${abi} lib${PN}-devel"
+PKG_HINTS="src lib devel"
+PKG_CONTENTS[0]=	# empty
+PKG_CONTENTS[1]="usr/bin/cyg${PN}-${abi}.dll usr/share/doc/"
+PKG_CONTENTS[2]="usr/bin/${PN}-config usr/include/ usr/lib/"
+
+CYGCONF_ARGS="--disable-static"
